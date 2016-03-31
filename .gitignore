@@ -1,0 +1,7 @@
+.iml
+.project
+target
+bin
+lib
+.settings
+.DS_Store
