@@ -14,7 +14,7 @@ import java.util.*;
 /**
  * Created by drewsmith on 3/30/16.
  */
-@Component
+//@Component
 public class ClientDetailsServiceImpl implements ClientDetailsService {
 
     @Autowired
@@ -22,7 +22,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 
     @Override
     public ClientDetails loadClientByClientId(String s) throws ClientRegistrationException {
-        OAuthUser user = oauthUserRepository.findByClientId(s);
+        OAuthUser user = oauthUserRepository.findById(s);
         if(user == null) {
             throw new ClientRegistrationException("Could not find user for clientId: " + s);
         }
@@ -39,7 +39,7 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
 
         @Override
         public String getClientId() {
-            return user.getClientId();
+            return user.getId();
         }
 
         @Override

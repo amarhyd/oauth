@@ -10,10 +10,10 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 
-@Configuration
-@EnableAuthorizationServer
-public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
-
+//@Configuration
+//@EnableAuthorizationServer
+public class OAuth2Config {//extends AuthorizationServerConfigurerAdapter {
+/*
     @Autowired
     @Qualifier("authenticationManagerBean")
     private AuthenticationManager authenticationManager;
@@ -31,5 +31,5 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.withClientDetails(clientDetailsService);
     }
-
+*/
 }

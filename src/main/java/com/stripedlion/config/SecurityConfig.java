@@ -14,10 +14,10 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 /**
  * Created by drewsmith on 3/30/16.
  */
-@Configuration
-@EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
+//@Configuration
+//@EnableWebSecurity
+public class SecurityConfig {//extends WebSecurityConfigurerAdapter {
+/*
     @Autowired
     public void globalUserDetails(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication().withUser("marissa").password("koala").roles("USER").and().withUser("paul")
@@ -60,4 +60,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .loginPage("/login.jsp");
         // @formatter:on
     }
+    */
 }

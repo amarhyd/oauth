@@ -2,7 +2,7 @@ package com.stripedlion.domain;
 
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * Created by drewsmith on 3/30/16.
@@ -13,9 +13,6 @@ public class OAuthUser {
 
     @Id
     private String id;
-
-    @Column
-    private String clientId;
 
     @Column
     private String secret;
@@ -34,14 +31,6 @@ public class OAuthUser {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getClientId() {
-        return clientId;
-    }
-
-    public void setClientId(String clientId) {
-        this.clientId = clientId;
     }
 
     public String getSecret() {
