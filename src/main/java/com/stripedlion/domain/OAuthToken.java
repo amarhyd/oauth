@@ -20,6 +20,10 @@ public class OAuthToken {
 	
 	@Column(name="expire_time")
 	private Date expireTime;
+	@Column(name="created_at")
+	private Date createDate;
+	@Column(name="updated_at")
+	private Date updateDate;
 
 	public String getId() {
 		return id;
@@ -36,6 +40,23 @@ public class OAuthToken {
 	public void setExpireTime(Date expireTime) {
 		this.expireTime = expireTime;
 	}
+
+	public Date getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
+
+	public Date getUpdateDate() {
+		return updateDate;
+	}
+
+	public void setUpdateDate(Date updateDate) {
+		this.updateDate = updateDate;
+	}
+	
 	
 	
 
